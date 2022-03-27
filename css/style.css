@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+.castom__container {
+  padding: 30px 30px;
+  padding-top: 30px;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Hamburger-sandwich-fast-food_1920x1080.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  background-color: #eb7f1a;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  font-size: 150px;
+  font-family: 'Hurricane', cursive;
+  margin-bottom: 5%;
+  position: relative;
+  -webkit-animation-name: title;
+          animation-name: title;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+}
+
+.header__title span {
+  color: black;
+}
+
+.header__button {
+  padding: 15px 20px;
+  background-color: #eb7f1a;
+  border: none;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  position: relative;
+  -webkit-animation-name: button;
+          animation-name: button;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__button a {
+  color: black;
+  font-size: 23spx;
+}
+
+.header__button-link:hover button {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.catalog {
+  background-color: black;
+}
+
+.catalog__title {
+  color: #FFFFFF;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 4px solid #8a8a8a;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.btn-outline-warning {
+  border-color: #eb7f1a;
+  color: #eb7f1a;
+  margin-top: 20px;
+}
+
+.btn-outline-warning:hover {
+  border-color: #eb7f1a;
+  background-color: #eb7f1a;
+}
+
+.basket {
+  position: absolute;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  padding: 5px 10px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.basket__icon {
+  width: 100%;
+}
+
+.basket span {
+  width: 27px;
+  height: 27px;
+  background-color: #eb7f1a;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  padding: 3px 8px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.basket:hover {
+  background-color: #FFFFFF;
+}
+
+.basket__none {
+  color: #FFFFFF;
+  padding: 30px 20px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  background-color: #eb7f1a;
+  text-align: center;
+}
+
+.delivery-cost {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.total-price {
+  color: green;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.section__sell {
+  padding-top: 30px;
+  background-color: black;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.sell__picture {
+  position: absolute;
+  left: 0;
+  padding: 15px 15px;
+  cursor: pointer;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sell__picture:hover {
+  background-color: #FFFFFF;
+}
+
+.cart__item {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  padding-right: 50px;
+  margin: 30px;
+}
+
+.cart__item-img {
+  width: 30%;
+}
+
+.items__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  border: 3px solid #FFFFFF;
+  background-color: #8a8a8a;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.items__control:hover {
+  -webkit-transform: scale(1.1, 1.11);
+      -ms-transform: scale(1.1, 1.11);
+          transform: scale(1.1, 1.11);
+}
+
+.items__current {
+  text-align: center;
+  padding: 3px 7px;
+  border: 3px solid #FFFFFF;
+  background-color: #8a8a8a;
+}
+
+.item__wrapper {
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  height: 63vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb7f1a;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border: 5px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(235, 127, 26, 0.89);
+}
+
+.down__border {
+  width: 43px;
+  -webkit-border-radius: 0 10px 10px 0;
+          border-radius: 0 10px 10px 0;
+}
+
+.up__border {
+  -webkit-border-radius: 10px 0 0 10px;
+          border-radius: 10px 0 0 10px;
+}
+
+.cart__items-currency {
+  font-size: 30px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #eb7f1a;
+  border-color: #eb7f1a;
+}
+
+.btn-primary:hover {
+  background-color: #ad6018;
+  border-color: #ad6018;
+}
+
+.order {
+  width: 100%;
+  padding: 15px 100px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+.order__container {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer {
+  height: 20vh;
+  border-top: 3px solid #8a8a8a;
+  background-color: black;
+}
+
+footer p {
+  color: #FFFFFF;
+  font-size: 17px;
+}
+
+@-webkit-keyframes title {
+  0% {
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+  }
+  65% {
+    -webkit-transform: translate(30%, 0%);
+            transform: translate(30%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+
+@keyframes title {
+  0% {
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+  }
+  65% {
+    -webkit-transform: translate(30%, 0%);
+            transform: translate(30%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0, -10%);
+            transform: translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+
+@keyframes button {
+  0% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0, -10%);
+            transform: translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
